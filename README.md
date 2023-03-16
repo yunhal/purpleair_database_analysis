@@ -27,8 +27,21 @@ As of December, 2022, the recommended methods to get PurpleAir data are the belo
 
 You will need to run this python script in the background in a computer, which must be turned on all the times to avoid any data loss. 
 
+To avoid overwriting the existing data files accidentally, the database directory is created with the datetime you executed the python script. 
+
+*You must have the followings before executing the script:
+1) purpleair_api_read_key : a text file in the working directory that contains your PurpleAir API key 
+2) sensor_id : a parameter in the script for a sensor ID (e.g., sensor_id = '143856') 
+3) Install the required packages (see the package list in the purpleair_build_database.py) 
+
+
+purpleair_build_database.py - to create sqlite and csv database 
+
 ```
 python purpleair_build_database.py &
 ```
 
-To avoid overwriting the existing data files accidentally, the database directory is created with the date you executed the python script. 
+purpleair_build_database_test.ipynb - to check how the script works (it creates the database files with only the first data) 
+
+test_reading_sqlite_csv.ipynb - to check saved PA data in the database files. 
+
