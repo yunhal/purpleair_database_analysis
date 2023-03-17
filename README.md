@@ -29,7 +29,7 @@ You will need to run this python script in the background in a computer, which m
 
 To avoid overwriting the existing data files accidentally, the database directory is created with the datetime you executed the python script. 
 
-*You must have the followings before executing the script:
+*You must have the followings before executing the script:*
 1) purpleair_api_read_key : a text file in the working directory that contains your PurpleAir API key 
 2) sensor_id : a parameter in the script for a sensor ID (e.g., sensor_id = '143856') 
 3) Install the required packages (see the package list in the purpleair_build_database.py) 
