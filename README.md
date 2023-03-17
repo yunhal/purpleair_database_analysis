@@ -7,7 +7,7 @@ The code below is designed to create a database using SQLite and CSV files in yo
 
 * It uses the "purpleair" library from GitHub, which handles Purple Air API: https://github.com/csm10495/purpleair
 
-##### Side Note about PurpleAir database
+## Side Note about PurpleAir database
 
 PurpleAir has recently changed the database access methods.  
 
@@ -23,7 +23,8 @@ As of December, 2022, the recommended methods to get PurpleAir data are the belo
 *This code is designed to support the method "2", building your own database in a local computer.*
 
 
-#### About the scripts 
+
+## About the scripts 
 
 **You must have the followings before executing the script:**
 - purpleair_api_read_key : a text file in the working directory that contains your PurpleAir API key 
@@ -33,13 +34,12 @@ As of December, 2022, the recommended methods to get PurpleAir data are the belo
 
 **purpleair_build_database.py** - to create sqlite and csv database 
 
->>You will need to run this python script in the background in a computer, which must be turned on all the times to avoid any data loss. 
->> To avoid overwriting the existing data files accidentally, the database directory is created with the datetime you executed the python script. 
-
 ```
 python purpleair_build_database.py &
 ```
-
+ - You will need to run this python script in the background in a computer, which must be turned on all the times to avoid any data loss. 
+ - To avoid overwriting the existing data files accidentally, the database directory is created with the datetime you executed the python script. 
+ 
 **purpleair_build_database_test.ipynb** - to check how the script works (it creates the database files with only the first data) 
 
 **test_reading_sqlite_csv.ipynb** - to check saved PA data in the database files. 
